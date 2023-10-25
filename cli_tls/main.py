@@ -119,7 +119,10 @@ def commandRunner() -> None:
     if cmd.startswith("req ") or cmd == "req":
         req(cmd.replace("req","").strip())
         return
-
-if __name__ == "__main__":
+    
+def main():
     while True:
         commandRunner()
+
+if __name__ == "__main__":
+    main()
